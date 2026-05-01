@@ -10,11 +10,11 @@
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 :root{
-  --rose:#F2C4CE; --rose-md:#E8A0B0; --rose-deep:#D4788A; --rose-pale:#FFF2F5;
+  --rose:#F2C4CE; --rose-md:#E8A0B0; --rose-deep:#B85070; --rose-pale:#FFF2F5;
   --lilac:#C8A8D4; --lilac-lt:#E8D8F0;
-  --gold:#C8963C; --gold-lt:#E8C878; --gold-pale:#F5E8C8;
+  --gold:#A67828; --gold-lt:#E8C878; --gold-pale:#F5E8C8;
   --beige:#EDE0D4; --beige-lt:#FAF6F1; --cream:#FFF8F0;
-  --text:#4A3428; --text-lt:#8C6A5A;
+  --text:#2C1A10; --text-lt:#5C3D28;
 }
 html{scroll-behavior:smooth;}
 body{min-height:100dvh;font-family:'Montserrat',sans-serif;background:linear-gradient(160deg,#FAF0F3 0%,#F5E8D8 35%,#FFF2F5 65%,#F0E8F8 100%);color:var(--text);overflow-x:hidden;}
@@ -86,7 +86,7 @@ body{min-height:100dvh;font-family:'Montserrat',sans-serif;background:linear-gra
 .hero-flower{font-size:1.8rem;margin-bottom:3rem;opacity:.75;animation:flowerSpin 8s linear infinite;}
 @keyframes flowerSpin{0%,100%{transform:rotate(0deg);}50%{transform:rotate(180deg);}}
 .hero-pills{display:flex;flex-wrap:wrap;gap:.7rem;justify-content:center;margin-bottom:2.5rem;}
-.pill{background:rgba(255,252,248,.88);backdrop-filter:blur(12px);border:1px solid rgba(200,150,60,.2);border-radius:50px;padding:.6rem 1.3rem;font-size:.82rem;font-weight:400;color:var(--text);display:flex;align-items:center;gap:.4rem;box-shadow:0 3px 12px rgba(74,52,40,.08);}
+.pill{background:rgba(255,252,248,.95);backdrop-filter:blur(12px);border:1.5px solid rgba(160,120,40,.35);border-radius:50px;padding:.65rem 1.4rem;font-size:.88rem;font-weight:600;color:var(--text);display:flex;align-items:center;gap:.4rem;box-shadow:0 3px 12px rgba(74,52,40,.08);}
 .hero-scroll{position:absolute;bottom:2.5rem;font-size:.65rem;font-weight:200;letter-spacing:.35em;text-transform:uppercase;color:var(--text-lt);opacity:.55;animation:scrollPulse 2.2s ease-in-out infinite;}
 @keyframes scrollPulse{0%,100%{opacity:.55;transform:translateY(0);}50%{opacity:1;transform:translateY(6px);}}
 
@@ -94,16 +94,16 @@ body{min-height:100dvh;font-family:'Montserrat',sans-serif;background:linear-gra
 .section{padding:3.5rem 1.5rem;position:relative;}
 .section-header{text-align:center;margin-bottom:2.8rem;}
 .section-line{width:55px;height:1px;background:var(--gold);margin:0 auto 1.5rem;opacity:.5;}
-.section-title{font-family:'Italiana',serif;font-size:2rem;letter-spacing:.1em;color:var(--text);margin-bottom:.5rem;}
+.section-title{font-family:'Italiana',serif;font-size:2.1rem;letter-spacing:.08em;color:var(--text);margin-bottom:.5rem;font-weight:400;}
 .section-sub{font-family:'Cormorant',serif;font-size:1rem;font-style:italic;font-weight:300;color:var(--text-lt);}
 
 /* MESSAGE */
 .msg-bear-icon{font-size:3.5rem;display:block;text-align:center;margin-bottom:2rem;animation:hugBear 3s ease-in-out infinite;}
 @keyframes hugBear{0%,100%{transform:scale(1) rotate(-2deg);}50%{transform:scale(1.12) rotate(2deg);}}
-.msg-card{background:rgba(255,252,248,.88);backdrop-filter:blur(22px);border:1px solid rgba(200,150,60,.18);border-radius:24px;padding:2.8rem 2.2rem;box-shadow:0 12px 55px rgba(74,52,40,.1);position:relative;overflow:hidden;}
+.msg-card{background:rgba(255,250,245,.96);backdrop-filter:blur(22px);border:1px solid rgba(200,150,60,.18);border-radius:24px;padding:2.8rem 2.2rem;box-shadow:0 12px 55px rgba(74,52,40,.1);position:relative;overflow:hidden;}
 .msg-card::before{content:'';position:absolute;top:-60%;right:-60%;width:250%;height:250%;background:radial-gradient(circle,rgba(242,196,206,.2) 0%,transparent 70%);pointer-events:none;}
 .msg-card::after{content:'“';position:absolute;top:-8px;left:18px;font-family:'Playfair Display',serif;font-size:5rem;color:var(--rose);opacity:.15;line-height:1;}
-.msg-text{font-family:'Cormorant',serif;font-size:1.08rem;line-height:1.95;color:var(--text);font-weight:400;position:relative;}
+.msg-text{font-family:'Cormorant',serif;font-size:1.18rem;line-height:2;color:var(--text);font-weight:400;position:relative;}
 .msg-text em{font-style:italic;color:var(--rose-md);font-weight:500;}
 .msg-sign{margin-top:2.2rem;text-align:right;font-family:'Playfair Display',serif;font-size:1.2rem;font-style:italic;color:var(--text-lt);}
 
@@ -119,17 +119,17 @@ body{min-height:100dvh;font-family:'Montserrat',sans-serif;background:linear-gra
 
 /* INFO CARDS */
 .info-grid{display:grid;gap:1.2rem;}
-.info-card{background:rgba(255,252,248,.88);backdrop-filter:blur(22px);border:1px solid rgba(200,150,60,.18);border-radius:20px;padding:1.8rem;display:flex;align-items:center;gap:1.4rem;box-shadow:0 6px 24px rgba(74,52,40,.08);transition:transform .35s cubic-bezier(.34,1.56,.64,1);}
+.info-card{background:rgba(255,250,245,.96);backdrop-filter:blur(22px);border:1px solid rgba(200,150,60,.18);border-radius:20px;padding:1.8rem;display:flex;align-items:center;gap:1.4rem;box-shadow:0 6px 24px rgba(74,52,40,.08);transition:transform .35s cubic-bezier(.34,1.56,.64,1);}
 .info-card:active{transform:scale(.97);}
 .info-icon-box{width:56px;height:56px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.6rem;flex-shrink:0;background:linear-gradient(135deg,rgba(242,196,206,.45),rgba(200,150,60,.2));box-shadow:0 4px 14px rgba(74,52,40,.1);animation:iconPulse 3s ease-in-out infinite;}
 @keyframes iconPulse{0%,100%{transform:scale(1);}50%{transform:scale(1.08);}}
 .info-icon-box.d1{animation-delay:.3s;} .info-icon-box.d2{animation-delay:.6s;} .info-icon-box.d3{animation-delay:.9s;}
-.info-lbl{font-size:.68rem;font-weight:500;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);margin-bottom:.4rem;}
-.info-val{font-family:'Cormorant',serif;font-size:1.1rem;font-weight:500;color:var(--text);line-height:1.45;}
-.info-sub{font-size:.82rem;color:var(--text-lt);font-weight:300;margin-top:.2rem;}
+.info-lbl{font-size:.72rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:.4rem;}
+.info-val{font-family:'Cormorant',serif;font-size:1.15rem;font-weight:600;color:var(--text);line-height:1.45;}
+.info-sub{font-size:.88rem;color:var(--text-lt);font-weight:400;margin-top:.2rem;}
 
 /* LOCATION */
-.loc-box{background:rgba(255,252,248,.88);backdrop-filter:blur(22px);border:1px solid rgba(200,150,60,.18);border-radius:24px;overflow:hidden;box-shadow:0 12px 45px rgba(74,52,40,.1);}
+.loc-box{background:rgba(255,250,245,.96);backdrop-filter:blur(22px);border:1px solid rgba(200,150,60,.18);border-radius:24px;overflow:hidden;box-shadow:0 12px 45px rgba(74,52,40,.1);}
 .map-visual{height:190px;background:linear-gradient(130deg,rgba(242,196,206,.28) 0%,rgba(232,221,208,.28) 100%),url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='450' height='190'%3E%3Crect fill='%23F5F0E8' width='450' height='190'/%3E%3Cline x1='0' y1='95' x2='450' y2='95' stroke='%23E8DDD0' stroke-width='1.2'/%3E%3Cline x1='225' y1='0' x2='225' y2='190' stroke='%23E8DDD0' stroke-width='1.2'/%3E%3Ccircle cx='225' cy='95' r='26' fill='%23E8C0C8' opacity='.75'/%3E%3Ccircle cx='225' cy='95' r='11' fill='white'/%3E%3Ccircle cx='225' cy='95' r='5.5' fill='%23E8C0C8'/%3E%3Cellipse cx='225' cy='124' rx='16' ry='7' fill='%23E8C0C8' opacity='.2'/%3E%3C/svg%3E");background-size:cover;display:flex;align-items:center;justify-content:center;position:relative;}
 .map-badge{background:rgba(255,252,248,.95);backdrop-filter:blur(10px);border:1px solid rgba(200,150,60,.22);border-radius:22px;padding:.5rem 1.2rem;font-size:.72rem;font-weight:400;letter-spacing:.08em;color:var(--text);box-shadow:0 3px 12px rgba(74,52,40,.1);}
 .loc-info{padding:1.8rem 2rem;}
@@ -159,7 +159,7 @@ body{min-height:100dvh;font-family:'Montserrat',sans-serif;background:linear-gra
 .spotify-icon{font-size:3.5rem;margin-bottom:1.5rem;display:block;animation:musicPulse 2s ease-in-out infinite;}
 @keyframes musicPulse{0%,100%{transform:scale(1);}50%{transform:scale(1.15);}}
 .spotify-heading{font-family:'Italiana',serif;font-size:1.8rem;letter-spacing:.08em;color:var(--text);margin-bottom:1rem;}
-.spotify-desc{font-family:'Cormorant',serif;font-size:1.05rem;line-height:1.85;color:var(--text-lt);font-weight:300;margin-bottom:2.2rem;}
+.spotify-desc{font-family:'Cormorant',serif;font-size:1.12rem;line-height:1.9;color:var(--text-lt);font-weight:300;margin-bottom:2.2rem;}
 .btn-spotify{display:inline-flex;align-items:center;gap:.6rem;padding:1rem 3rem;background:linear-gradient(135deg,#1DB954,#1ED760);border:1px solid rgba(29,185,84,.4);border-radius:50px;color:#fff;text-decoration:none;font-family:'Montserrat',sans-serif;font-weight:500;font-size:.85rem;letter-spacing:.18em;text-transform:uppercase;box-shadow:0 8px 28px rgba(29,185,84,.35);transition:all .35s cubic-bezier(.34,1.56,.64,1);}
 .btn-spotify:hover{transform:translateY(-3px);}
 
@@ -168,7 +168,7 @@ body{min-height:100dvh;font-family:'Montserrat',sans-serif;background:linear-gra
 .gift-emoji{font-size:3rem;margin-bottom:1.5rem;display:block;animation:giftBounce 2s ease-in-out infinite;}
 @keyframes giftBounce{0%,100%{transform:translateY(0) rotate(-5deg);}50%{transform:translateY(-10px) rotate(5deg);}}
 .gift-heading{font-family:'Italiana',serif;font-size:1.7rem;letter-spacing:.08em;color:var(--text);margin-bottom:1.2rem;}
-.gift-desc{font-family:'Cormorant',serif;font-size:1.05rem;line-height:1.85;color:var(--text-lt);font-weight:300;margin-bottom:2.2rem;}
+.gift-desc{font-family:'Cormorant',serif;font-size:1.12rem;line-height:1.9;color:var(--text-lt);font-weight:300;margin-bottom:2.2rem;}
 .btn-gift{display:inline-flex;align-items:center;gap:.6rem;padding:1rem 3rem;background:linear-gradient(135deg,var(--gold),var(--gold-lt));border:1px solid rgba(200,150,60,.35);border-radius:50px;color:#fff;text-decoration:none;font-family:'Montserrat',sans-serif;font-weight:400;font-size:.85rem;letter-spacing:.18em;text-transform:uppercase;box-shadow:0 8px 28px rgba(200,150,60,.35);cursor:pointer;border:none;transition:all .35s cubic-bezier(.34,1.56,.64,1);}
 .btn-gift:hover{transform:translateY(-3px);}
 
@@ -442,7 +442,7 @@ body{min-height:100dvh;font-family:'Montserrat',sans-serif;background:linear-gra
 <div id="particles"></div>
 
 <audio id="bg-audio" loop>
-  <source src="https://raw.githubusercontent.com/dmgni/baby-shower/95e017210784088eb2779fbc047569f28d828ec6/lightbeatsmusic-happy-melody-sunshine-kids-443393.mp3" type="audio/mpeg">
+  <source src="https://raw.githubusercontent.com/dmgni/baby-shower/79483a9bf08f3e80125bc106849287556ce83846/Lola%20Vila%20-%20Mi%20Julietita.mp3" type="audio/mpeg">
 </audio>
 <button id="audio-toggle" onclick="toggleAudio()">🔊</button>
 <button id="back-btn" onclick="goBack()">← Inicio</button>
@@ -548,9 +548,19 @@ body{min-height:100dvh;font-family:'Montserrat',sans-serif;background:linear-gra
       <div class="map-visual"><div class="map-badge">📍 Eventos Gloss · San Bernardo</div></div>
       <div class="loc-info">
         <p class="loc-addr">Eventos Gloss</p>
-        <p class="loc-city">Sta. Pamela 28 · San Bernardo · RM</p>
+        <p class="loc-city">Santa Pamela 29 · San Bernardo · RM</p>
         <button class="btn-map" onclick="openSheet()">🗺️ VER CÓMO LLEGAR</button>
       </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-header fade-up"><div class="section-line"></div><h2 class="section-title">Para Nuestra Princesa</h2></div>
+    <div class="gift-box fade-up">
+      <span class="gift-emoji">🎁</span>
+      <h3 class="gift-heading">Con Amor, para Ella</h3>
+      <p class="gift-desc">Tu presencia es muy importante para nosotros y es lo único que necesitamos. Si deseas traer algo especial para nuestra pequeña, hemos preparado una lista con mucho cariño para que tengas una referencia — no hay ningún compromiso. Código Falabella: <strong style="color:var(--gold);">Club Bebé · 1015362-11</strong></p>
+      <button class="btn-gift" onclick="openGiftModal()">🎀 VER LISTA DE REGALOS</button>
     </div>
   </section>
 
@@ -560,19 +570,11 @@ body{min-height:100dvh;font-family:'Montserrat',sans-serif;background:linear-gra
       <span class="spotify-icon">🎵</span>
       <h3 class="spotify-heading">Pon tu Canción</h3>
       <p class="spotify-desc">Ayúdanos a crear la banda sonora perfecta para este día. Agrega la canción que no puede faltar en nuestra playlist.</p>
-      <a class="btn-spotify" href="https://open.spotify.com/playlist/16a3Sd0wXJdHWVdBH7J1Gm" target="_blank" rel="noopener">🎧 AGREGAR CANCIÓN</a>
+      <a class="btn-spotify" href="https://open.spotify.com/playlist/16a3Sd0wXJdHWVdBH7J1Gm?si=SI4wCYoOR7OS17Wjo4dbpw" target="_blank" rel="noopener">🎧 AGREGAR CANCIÓN</a>
     </div>
   </section>
 
-  <section class="section">
-    <div class="section-header fade-up"><div class="section-line"></div><h2 class="section-title">Para Nuestra Princesa</h2></div>
-    <div class="gift-box fade-up">
-      <span class="gift-emoji">🎁</span>
-      <h3 class="gift-heading">Con Amor, para Ella</h3>
-      <p class="gift-desc">Tu presencia ya llena nuestro corazón. Si deseas traer algo especial para nuestra pequeña, hemos preparado una lista con mucho cariño. Código Falabella: <strong style="color:var(--gold);">Club Bebé · 1015362-11</strong></p>
-      <button class="btn-gift" onclick="openGiftModal()">🎀 VER LISTA DE REGALOS</button>
-    </div>
-  </section>
+  
 
   <footer class="footer fade-up">
     <div class="footer-line"></div>
@@ -586,7 +588,7 @@ body{min-height:100dvh;font-family:'Montserrat',sans-serif;background:linear-gra
   <div id="bottom-sheet">
     <div class="sheet-handle"></div>
     <h3 class="sheet-heading">Cómo Llegar</h3>
-    <p class="sheet-sub">Eventos Gloss · Sta. Pamela 28 · San Bernardo</p>
+    <p class="sheet-sub">Eventos Gloss · Santa Pamela 29 · San Bernardo</p>
     <a class="map-link" href="https://maps.app.goo.gl/KdbTz1ipeazneDVb8" target="_blank" rel="noopener">
       <div class="map-link-icon">🗺️</div>
       <div><span class="map-link-name">Google Maps</span><span class="map-link-desc" style="display:block;">Abrir en Google Maps</span></div>
@@ -756,6 +758,11 @@ function openInvitation() {
   audio.play().then(()=>{ audioOn=true; toggle.textContent='🔊'; }).catch(()=>{ toggle.textContent='🔇'; });
 }
 function goBack() {
+  // Stop audio when returning to welcome screen
+  audio.pause();
+  audio.currentTime = 0;
+  audioOn = false;
+  toggle.textContent = '🔊';
   document.getElementById('welcome').classList.remove('hidden');
   document.getElementById('back-btn').style.display = 'none';
   window.scrollTo({top:0,behavior:'smooth'});
@@ -954,7 +961,7 @@ function renderGifts(gifts) {
         `<p class="gift-item-name">${g.nombre}</p>` +
         `<p class="gift-item-desc">${g.descripcion}</p>` +
         (g.precio ? `<p class="gift-item-price">${g.precio}</p>` : '') +
-        (g.link   ? `<a class="gift-ref-link" href="${g.link}" target="_blank" rel="noopener">Ver referencia →</a>` : '') +
+        (g.link && g.link.startsWith('http') ? `<a class="gift-ref-link" href="${g.link.trim()}" target="_blank" rel="noopener">Ver referencia →</a>` : '') +
       `</div>` +
       `<div class="gift-item-status">${statusHtml}</div>`;
     container.appendChild(div);
@@ -1024,6 +1031,15 @@ function confirmGiftReserve() {
   );
   setTimeout(()=>{ window.open('https://wa.me/56923841829?text='+waText,'_blank'); }, 400);
 }
+
+// Stop audio when tab/app goes to background
+document.addEventListener('visibilitychange', function() {
+  if (document.hidden && audioOn) {
+    audio.pause();
+    audioOn = false;
+    toggle.textContent = '🔊';
+  }
+});
 
 document.addEventListener('keydown', e => {
   if (e.key==='Escape') { closeSheet(); closeRSVP(); closeGiftModal(); closeGiftReserve(); }

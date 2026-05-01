@@ -201,7 +201,7 @@ body{min-height:100dvh;font-family:'Montserrat',sans-serif;background:linear-gra
 .gift-item-name{font-family:'Cormorant',serif;font-size:1.05rem;font-weight:500;color:var(--text);margin-bottom:.2rem;}
 .gift-item-desc{font-size:.78rem;font-weight:300;color:var(--text-lt);line-height:1.4;margin-bottom:.35rem;}
 .gift-item-price{font-family:'Montserrat',sans-serif;font-size:.72rem;font-weight:500;letter-spacing:.08em;color:var(--gold);}
-.gift-ref-link{display:inline-block;margin-top:.3rem;font-size:.68rem;color:var(--rose-deep);text-decoration:none;border-bottom:1px solid rgba(212,120,138,.3);}
+.gift-ref-link{display:inline-block;margin-top:.5rem;font-size:.75rem;font-weight:500;color:#fff;background:linear-gradient(135deg,var(--rose-deep),var(--rose-md));padding:.3rem .8rem;border-radius:20px;text-decoration:none;letter-spacing:.04em;box-shadow:0 2px 8px rgba(212,120,138,.3);}
 .gift-item-status{flex-shrink:0;}
 .btn-reserve{padding:.55rem 1.1rem;background:linear-gradient(135deg,var(--rose-deep),var(--rose-md));border:none;border-radius:50px;color:#fff;font-family:'Montserrat',sans-serif;font-size:.72rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;white-space:nowrap;box-shadow:0 4px 14px rgba(212,120,138,.3);transition:all .3s;}
 .btn-reserve:hover{transform:scale(1.05);}
@@ -741,7 +741,7 @@ document.getElementById('bear-wm-4').src = B2;
 let audioOn = false;
 const audio  = document.getElementById('bg-audio');
 const toggle = document.getElementById('audio-toggle');
-audio.volume = 0.18;
+audio.volume = 0.55;
 
 function toggleAudio() {
   audioOn = !audioOn;
@@ -961,7 +961,7 @@ function renderGifts(gifts) {
         `<p class="gift-item-name">${g.nombre}</p>` +
         `<p class="gift-item-desc">${g.descripcion}</p>` +
         (g.precio ? `<p class="gift-item-price">${g.precio}</p>` : '') +
-        (g.link && g.link.startsWith('http') ? `<a class="gift-ref-link" href="${g.link.trim()}" target="_blank" rel="noopener">Ver referencia →</a>` : '') +
+        (g.link && g.link.trim().length > 5 ? `<a class="gift-ref-link" href="${g.link.trim()}" target="_blank" rel="noopener">🔗 Ver referencia</a>` : '') +
       `</div>` +
       `<div class="gift-item-status">${statusHtml}</div>`;
     container.appendChild(div);
